@@ -4,6 +4,8 @@ import os.path
 from googleapiclient.discovery import build
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
+import pandas as pd
+import pprint
 
 # If modifying these scopes, delete the file token.pickle.
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets.readonly']
@@ -43,8 +45,14 @@ def main():
     response = request.execute()
     keys = [key for key, val in response.items()]
     print(keys)
-    sheetVal = response[keys[2]]
-    print(i for i in sheetVal)
+    sheet_val = response['sheets']
+    pp = pprint.PrettyPrinter()
+
+    for i in sheet_val:
+        if type(i) == dict:
+            for k, v in i.items():
+                if k == 'data':
+                    pp.pprint(v)
 
 
 
