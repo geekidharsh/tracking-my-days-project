@@ -1,0 +1,29 @@
+tracking my days project - to do
+
+1. flatten all data to generate dates from the rows and columns
+    - merge row head with column header to create timestamp
+2. analytics: 
+    - how many days were tracked in the year
+    truth scale:   
+        - days i lied
+        - days i missed to tracked
+        - days i was truthful
+        - exception days
+        - top notes
+        - proportion of truth vs lying 
+        - big lies vs small lies
+
+    mood:
+        - days i missed 
+        - days i was feeling good vs okay vs great vs bad
+    
+    combined analytics: 
+        - mood and truth scale relationship
+            - days i was truthful vs my mood.
+
+Other sharable insights: 
+- discuss where i hosted it
+- how i created the project 
+- how i tracked it
+- what tools i used and why
+- what transformations were involved. 
